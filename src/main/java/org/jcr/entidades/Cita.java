@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Objects;
 
 @Builder
-@Setter
+//@Setter --> No recomendable, variables 'final' y uso de set personalizados
 @Getter
 @ToString
 

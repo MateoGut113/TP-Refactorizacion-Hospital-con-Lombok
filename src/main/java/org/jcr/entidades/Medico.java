@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder; //No recomendable por las validaciones internas
-// y complicaciones con a la hora de crear una historia clinica
+// y complicaciones a la hora de crear una historia clinica
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -13,8 +13,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+//@Setter --> No recomendable, variables 'final' y se utiliza un set personalizado
 @Getter
-@Setter
 @ToString(callSuper = true, onlyExplicitlyIncluded = true) //Mostrará los atributos incluidos, y los de la clase padre.
 
 public class Medico extends Persona implements Serializable {

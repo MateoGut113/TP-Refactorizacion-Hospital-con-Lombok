@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+//@Setter --> No recomendable, variables 'final'
 @Getter
 @ToString (onlyExplicitlyIncluded = true) //Solo apareceran los campos indicados
 

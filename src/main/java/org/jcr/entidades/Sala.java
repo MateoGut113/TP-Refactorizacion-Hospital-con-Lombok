@@ -11,9 +11,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-@Setter
+//@Setter --> No recomendable, variables 'final'
 @Getter
-@ToString (exclude = "citas")
+@ToString (exclude = {"citas"})
 @Builder
 
 public class Sala implements Serializable {
